@@ -44,3 +44,10 @@
   line-height: 32px;
   margin:32px 0px 32px 0px;
 }
+.card-title{
+  font-family: var(--font-lato);
+  font-size: 18px;
+  font-weight: var(--font-700);
+  line-height: 18px;
+  margin-bottom: 35.87px;
+}
