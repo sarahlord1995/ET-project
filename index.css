@@ -135,6 +135,43 @@ nav{
   background: linear-gradient(111deg, #2A4032 0.81%, #3A5E46 100%);
 }
 
+.box-titles{
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 12px;
+  padding: 0px 15px;
+}
+
+
+.year{
+  color: rgba(255, 255, 255, 0.30);
+  font-family: Lato;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.title-home{
+  color: #FFF;
+  font-family: Lato;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 50px; /* 83.333% */
+  text-transform: capitalize;
+}
+
+
+.par-title{
+  color: rgba(255, 255, 255, 0.80);
+  font-family: Lato;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 
 
