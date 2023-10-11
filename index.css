@@ -305,8 +305,10 @@ nav {
 .sellers-list {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row;
   width: 100%;
   overflow-x: scroll;
+  gap: 35px;
 }
 
 .sellers-card {
@@ -325,9 +327,10 @@ nav {
   height: var(--size);
   align-self: flex-end;
   margin: 16px;
-
-
 }
+/* :hover .heart-icon{
+  background-color: #000;
+} */
 
 .sellers-image {
   padding: 0px 51.25px 40.32px 43.5px;
@@ -364,5 +367,4 @@ nav {
   font-weight: var(--font-300);
   line-height: normal;
   text-transform: capitalize;
-  
 }
