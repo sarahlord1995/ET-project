@@ -36,7 +36,7 @@
 
 /*       header     */
 
-header{
+header {
   width: 100%;
   padding: 25px 110px;
   position: fixed;
@@ -47,7 +47,7 @@ header{
 
 /*        nav       */
 
-nav{
+nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -58,44 +58,46 @@ nav{
 
 /*    logo   */
 
-.logo{
+.logo {
   color: #FFF;
   text-align: center;
   font-family: var(--font-lato);
   font-size: 36px;
   font-style: normal;
   font-weight: var(--font-900);
-  line-height: 40px; /* 111.111% */
+  line-height: 40px;
+  /* 111.111% */
 }
 
 
 
 /*        list-item           */
 
-.list-item{
+.list-item {
   display: flex;
   flex-flow: row nowrap;
   gap: 32px;
   align-items: center;
 }
 
-.list-item li.active{
+.list-item li.active {
   color: var(--white-color);
 }
 
 
-.list_item-link{
+.list_item-link {
   color: var(--white-opacity-3);
   text-align: center;
   font-family: var(--font-lato);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--font-400);
-  line-height: 40px; /* 222.222% */
+  line-height: 40px;
+  /* 222.222% */
 }
 
 
-.store_link{
+.store_link {
   width: 40px;
   height: 40px;
   border-radius: var(--radius-50);
@@ -126,16 +128,16 @@ nav{
   margin: auto;
   max-width: 1320px;
   padding: 0px 15px;
- 
+
 }
 
 /*       page-1         */
 
-.home-page{
+.home-page {
   background: linear-gradient(111deg, #2A4032 0.81%, #3A5E46 100%);
 }
 
-.box-titles{
+.box-titles {
   display: flex;
   flex-flow: column nowrap;
   gap: 12px;
@@ -143,7 +145,7 @@ nav{
 }
 
 
-.year{
+.year {
   color: rgba(255, 255, 255, 0.30);
   font-family: Lato;
   font-size: 30px;
@@ -153,18 +155,19 @@ nav{
 }
 
 
-.title-home{
+.title-home {
   color: #FFF;
   font-family: Lato;
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
-  line-height: 50px; /* 83.333% */
+  line-height: 50px;
+  /* 83.333% */
   text-transform: capitalize;
 }
 
 
-.par-title{
+.par-title {
   color: rgba(255, 255, 255, 0.80);
   font-family: Lato;
   font-size: 18px;
@@ -192,6 +195,7 @@ nav{
   border-radius: 24px;
   position: relative;
 }
+
 .row {
   display: flex;
   flex-direction: column;
@@ -275,7 +279,8 @@ nav{
   line-height: normal;
   margin-top: 52.47px;
 }
-.second-card-btn-wrapper{
+
+.second-card-btn-wrapper {
   margin-top: 56px;
 }
 
@@ -284,14 +289,80 @@ nav{
 
 /* sellers section --------> */
 
-.sellers{
-  background-color: red;
+.sellers {
+  background-color: var(--bg-gray-2);
   margin-bottom: 80px;
 }
-.sellers-title{
+
+.sellers-title {
   font-family: var(--font-lato);
   font-size: 32px;
   font-weight: var(--font-400);
   line-height: 32px;
   padding: 32px 0px;
+}
+
+.sellers-list {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.sellers-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  border-radius: 24px;
+}
+
+.heart-icon {
+  --size: 24px;
+  text-align: right;
+  width: var(--size);
+  height: var(--size);
+  align-self: flex-end;
+  margin: 16px;
+
+
+}
+
+.sellers-image {
+  padding: 0px 51.25px 40.32px 43.5px;
+  align-self: stretch;
+}
+/* clothes card --------> */
+
+.clothes-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.clothes-title {
+  font-family: var(--font-roboto);
+  font-size: 16px;
+  font-weight: var(--font-500);
+  line-height: 19px;
+  color: var(--black-color);
+}
+
+.shopping-image {
+  display: block;
+  background-color: var(--yellow-color);
+  padding: 7px;
+  border-radius: 6px;
+}
+
+.clothes-price {
+  color: rgba(0, 0, 0, 0.60);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: var(--font-300);
+  line-height: normal;
+  text-transform: capitalize;
+  
 }
