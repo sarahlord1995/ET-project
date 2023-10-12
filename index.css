@@ -400,8 +400,10 @@ nav {
 .sellers-list {
   display: flex;
   flex-wrap: nowrap;
+  flex-direction: row;
   width: 100%;
   overflow-x: scroll;
+  gap: 35px;
 }
 
 .sellers-card {
@@ -415,18 +417,23 @@ nav {
 
 .heart-icon {
   --size: 24px;
-  text-align: right;
   width: var(--size);
   height: var(--size);
+}
+.heart-btn{
   align-self: flex-end;
-  margin: 16px;
-
-
+  background-color: var(--white-color);
+  border: none;
+  margin:15px 12px 0px;
 }
 
 .sellers-image {
-  padding: 0px 51.25px 40.32px 43.5px;
-  align-self: stretch;
+  width: 133px;
+  height: auto;
+  object-fit: cover;
+}
+.clothes-image{
+  padding: 0px 51.25px 42px 43px;
 }
 /* clothes card --------> */
 
@@ -459,5 +466,4 @@ nav {
   font-weight: var(--font-300);
   line-height: normal;
   text-transform: capitalize;
-  
 }
