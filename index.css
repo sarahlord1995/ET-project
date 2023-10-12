@@ -15,6 +15,7 @@
   --bg-brands: #181818;
   --bg-gray-1: #C5C2CA;
   --bg-gray-2: #E9E9E9;
+  --green:#3B5F47;
   --radius-50: 50%;
   --radius-6: 6px;
   --radius-8: 8px;
@@ -36,7 +37,7 @@
 
 /*       header     */
 
-header {
+/* header {
   width: 100%;
   padding: 25px 110px;
   position: fixed;
@@ -262,7 +263,7 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
-}
+} */
 
 
 
@@ -386,7 +387,6 @@ nav {
 
 .sellers {
   background-color: var(--bg-gray-2);
-  margin-bottom: 80px;
 }
 
 .sellers-title {
@@ -460,10 +460,22 @@ nav {
 
 .clothes-price {
   color: rgba(0, 0, 0, 0.60);
-  font-family: Roboto;
+  font-family:var(--font-roboto);
   font-size: 14px;
   font-style: normal;
   font-weight: var(--font-300);
   line-height: normal;
   text-transform: capitalize;
+}
+.sales{
+  background-color:var(--green);
+}
+.seles-title{
+  font-family: var(--font-lato);
+  font-size: 32px;
+  font-weight: var(--font-700);
+  line-height: 32px;
+  color: var(--white-color);
+  padding: 32px 0px;
+ text-align: center;
 }
