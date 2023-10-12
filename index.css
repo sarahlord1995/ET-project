@@ -15,7 +15,8 @@
   --bg-brands: #181818;
   --bg-gray-1: #C5C2CA;
   --bg-gray-2: #E9E9E9;
-  --green:#3B5F47;
+  --white-opacity: rgba(255, 255, 255, 1);
+  --green: #3B5F47;
   --radius-50: 50%;
   --radius-6: 6px;
   --radius-8: 8px;
@@ -37,7 +38,7 @@
 
 /*       header     */
 
- header {
+header {
   width: 100%;
   padding: 25px 110px;
   position: fixed;
@@ -141,7 +142,7 @@ nav {
   overflow: hidden;
 }
 
-.home-page::before{
+.home-page::before {
   content: '';
   width: 196px;
   height: 196px;
@@ -151,20 +152,20 @@ nav {
   border-radius: 50%;
   background-color: #1B2D22;
   z-index: 0;
-  
+
 }
 
-.home-page::after{
-    content: '';
-    width: 196px;
-    height: 196px;
-    position: absolute;
-    bottom: 165px;
-    right: 27px;
-    border-radius: 50%;
-    background-color: #1B2D22;
-    z-index: 0;
-  }
+.home-page::after {
+  content: '';
+  width: 196px;
+  height: 196px;
+  position: absolute;
+  bottom: 165px;
+  right: 27px;
+  border-radius: 50%;
+  background-color: #1B2D22;
+  z-index: 0;
+}
 
 
 .box-titles {
@@ -211,7 +212,7 @@ nav {
 }
 
 
-.btn-collection{
+.btn-collection {
   display: flex;
   padding: 16px 40px;
   align-items: flex-start;
@@ -228,27 +229,27 @@ nav {
   margin-top: 12px;
 }
 
-.home-img{
+.home-img {
   width: 228px;
   position: absolute;
   bottom: 0;
   right: 74px;
-  z-index:99;
+  z-index: 99;
 }
 
-.dots{
+.dots {
   display: flex;
   justify-content: center;
   position: absolute;
   bottom: 70px;
   left: 150px;
   z-index: 9999;
-  
+
 }
 
 
 /*       nav-mobile         */
-.nav_mobile{
+.nav_mobile {
   height: 48px;
   padding: 12px 15px;
   position: fixed;
@@ -259,22 +260,19 @@ nav {
 }
 
 
-.nav_mobile-list{
+.nav_mobile-list {
   width: 100%;
   display: flex;
   justify-content: space-between;
-} */
+}
 
-
-
-
-
-
-
-
-
-
+*/
 /*        page-2        */
+
+
+
+
+
 
 
 .collection-title {
@@ -284,12 +282,10 @@ nav {
   line-height: 32px;
   margin: 32px 0px;
 }
-
 .card-body {
   padding: 18px 18px;
   background-color: var(--bg-gray-1);
   border-radius: 24px;
-  position: relative;
 }
 
 .row {
@@ -314,7 +310,6 @@ nav {
   margin-bottom: -53px;
 
 }
-
 .card-btn {
   padding: 16px 40px;
   border-radius: 6px;
@@ -420,11 +415,12 @@ nav {
   width: var(--size);
   height: var(--size);
 }
-.heart-btn{
+
+.heart-btn {
   align-self: flex-end;
   background-color: var(--white-color);
   border: none;
-  margin:15px 12px 0px;
+  margin: 15px 12px 0px;
 }
 
 .sellers-image {
@@ -432,9 +428,11 @@ nav {
   height: auto;
   object-fit: cover;
 }
-.clothes-image{
+
+.clothes-image {
   padding: 0px 51.25px 42px 43px;
 }
+
 /* clothes card --------> */
 
 .clothes-card {
@@ -460,22 +458,70 @@ nav {
 
 .clothes-price {
   color: rgba(0, 0, 0, 0.60);
-  font-family:var(--font-roboto);
+  font-family: var(--font-roboto);
   font-size: 14px;
   font-style: normal;
   font-weight: var(--font-300);
   line-height: normal;
   text-transform: capitalize;
 }
-.sales{
-  background-color:var(--green);
+
+/* sale part --------> */
+
+
+
+.sales {
+  background-color: var(--green);
+  padding: 32px 0px;
 }
-.seles-title{
+
+.seles-title {
   font-family: var(--font-lato);
   font-size: 32px;
   font-weight: var(--font-700);
   line-height: 32px;
   color: var(--white-color);
-  padding: 32px 0px;
- text-align: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.date-list {
+  color: var(--white-color);
+  font-family: var(--font-roboto);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.date-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.date-body {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0px;
+  border-radius: 8px;
+  width: 54px;
+  height: 56px;
+  background-color: var(--black-opacity-2);
+  align-items: center;
+}
+
+.date-number {
+  font-size: 24px;
+  font-weight: var(700);
+  line-height: 32px;
+}
+
+.date-desc {
+  text-align: center;
+  font-size: 12px;
+  font-weight: var(--font-300);
+  line-height: 14px;
+  color: var(--white-opacity);
 }
