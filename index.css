@@ -280,17 +280,20 @@ nav {
   line-height: 32px;
   margin: 32px 0px;
 }
-.card-list{
+
+.card-list {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 
 }
-.card-item{
+
+.card-item {
   display: flex;
   flex-direction: column;
 
 }
+
 .card-body {
   padding: 18px 18px;
   background-color: var(--bg-gray-1);
@@ -317,8 +320,9 @@ nav {
   display: block;
   margin: auto;
   margin-bottom: -53px;
-  
+
 }
+
 .card-btn {
   padding: 16px 40px;
   border-radius: 6px;
@@ -538,38 +542,116 @@ nav {
 
 @media (min-width:1000px) {
   .container {
-    min-width: 1320px; 
+    min-width: 1320px;
+
+  }
+  .collection-title{
+    margin: 70px 0px;
+    font-size: 48px;
+    line-height: 48px;
+  }
+  .collection {
+    margin-bottom: 70px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+
+  .card-body {
+    padding: 0px;
+  }
+
+  .card-title {
+    font-size: 24px;
+    line-height: 40px;
+    padding: 24px 0px 0px 24px;
+  }
+
+  .card-image {
+    width: 100%;
+    padding: 0px 110.67px;
+    margin-bottom: -60px;
+    margin-top: -29px;
+  }
+
+  .card-btn-wrapper {
+    text-align: right;
+    padding: 0px 24px 24px 0px;
+  }
+
+  /* .second-card ----------> */
+
+  .second-card {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0px;
+  }
+
+  .second-card-image {
+    width: 100%;
+    margin-top: 30.64px;
+  }
+  .second-card-title {
+    font-size: 24px;
+    line-height: 40px;
+    margin-top: 20.39px;
+    margin-right: 98.5px;
+    margin-top: 71.87px;
+    white-space: nowrap;
+  }
+  .second-card-description {
+    font-size: 48px;
+    margin-right: 96.5px;
+    white-space: nowrap;
+  }
   
+.second-card-btn-wrapper {
+  margin-top: 235px;
+  margin-left: 95px;
 }
-.collection{
-  margin-bottom: 70px;
+/* second-card Ended -----------> */
+
+/* sellers section --------> */
+.sellers{
+  padding:70px 0px;
 }
-.card-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+.sellers-title {
+  font-size: 48px;
+  line-height: 48px;
+  padding:0px 0px 70px;
 }
-.card-body {
-  padding:0px;
+.sellers-list {
+  overflow: hidden;
 }
-.card-title {
-  font-size: 24px;
-  line-height: 40px;
-  padding: 24px 0px 0px 24px;
+.sellers-image {
+  width:100%;
+  height: auto;
 }
-.card-image {
-  width: 100%;
-  padding: 0px 110.67px;
-  margin-bottom: -60px;
-  margin-top: -29px;
+.clothes-image {
+  padding: 0px 40.63px 54.01px 48.88px;
+
 }
-.card-btn-wrapper {
-  text-align: right;
-  padding: 0px 24px 24px 0px;
+.clothes-title {
+  font-size: 18px;
+  line-height: normal;
+}
+.shopping-image {
+  padding: 11px;
+}
+.clothes-price {
+  font-size: 16px;
+  line-height: 18.75px;
+  margin-top: 4px;
 }
 
 
 
 
-  
+
+
 }
