@@ -192,10 +192,9 @@ nav {
 
 .title-home {
   color: #FFF;
-  font-family: Lato;
+  font-family: var(--font-lato);
   font-size: 60px;
-  font-style: normal;
-  font-weight: 900;
+  font-weight: var(--font-900);
   line-height: 50px;
   /* 83.333% */
   text-transform: capitalize;
@@ -266,7 +265,6 @@ nav {
   justify-content: space-between;
 }
 
-*/
 /*        page-2        */
 
 
@@ -524,4 +522,12 @@ nav {
   font-weight: var(--font-300);
   line-height: 14px;
   color: var(--white-opacity);
+}
+
+
+@media (min-width:1000px) {
+  .container {
+    min-width: 1320px; 
+}
+  
 }
