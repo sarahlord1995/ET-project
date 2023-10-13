@@ -10,6 +10,8 @@
   --white-opacity-8: rgba(255, 255, 255, 0.80);
   --white-opacity-3: rgba(255, 255, 255, 0.30);
   --black-opacity-2: rgba(24, 24, 24, 0.25);
+  --color-opacity: rgba(0, 0, 0, 0.60);
+  --color-opacity-20: rgba(0, 0, 0, 0.20);
   --yellow-color: #FDDE67;
   --bg-main: linear-gradient(111deg, #2A4032 0.81%, #3A5E46 100%);
   --bg-brands: #181818;
@@ -395,6 +397,7 @@ nav {
 
 .sellers {
   background-color: var(--bg-gray-2);
+  padding: 32px 0px;
 }
 
 .sellers-title {
@@ -402,7 +405,7 @@ nav {
   font-size: 32px;
   font-weight: var(--font-400);
   line-height: 32px;
-  padding: 32px 0px;
+  margin-bottom: 32px;
 }
 
 .sellers-list {
@@ -436,6 +439,10 @@ nav {
   margin: 15px 12px 0px;
 }
 
+.sellers-item {
+  font-family: var(--font-roboto);
+}
+
 .sellers-image {
   width: 133px;
   height: auto;
@@ -450,12 +457,12 @@ nav {
 
 .clothes-card {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   margin-top: 16px;
 }
 
 .clothes-title {
-  font-family: var(--font-roboto);
   font-size: 16px;
   font-weight: var(--font-500);
   line-height: 19px;
@@ -463,21 +470,35 @@ nav {
 }
 
 .shopping-image {
-  display: block;
+  --size: 30px;
+  display: flex;
   background-color: var(--yellow-color);
-  padding: 7px;
   border-radius: 6px;
+  padding: 7px 7px;
+  width: var(--size);
+  height: var(--size);
+
 }
 
 .clothes-price {
-  color: rgba(0, 0, 0, 0.60);
-  font-family: var(--font-roboto);
+  color: var(--color-opacity);
   font-size: 14px;
-  font-style: normal;
   font-weight: var(--font-300);
   line-height: normal;
-  text-transform: capitalize;
 }
+
+.discount-price {
+  color: var(--color-opacity-20);
+  font-size: 16px;
+  font-weight: var(--font-500);
+  line-height: normal;
+  text-decoration: line-through;
+  display: none;
+}
+.Products-btn{
+  display: none;
+}
+
 
 /* sale part --------> */
 
@@ -545,11 +566,13 @@ nav {
     min-width: 1320px;
 
   }
-  .collection-title{
+
+  .collection-title {
     margin: 70px 0px;
     font-size: 48px;
     line-height: 48px;
   }
+
   .collection {
     margin-bottom: 70px;
   }
@@ -596,6 +619,7 @@ nav {
     width: 100%;
     margin-top: 30.64px;
   }
+
   .second-card-title {
     font-size: 24px;
     line-height: 40px;
@@ -604,51 +628,99 @@ nav {
     margin-top: 71.87px;
     white-space: nowrap;
   }
+
   .second-card-description {
     font-size: 48px;
     margin-right: 96.5px;
     white-space: nowrap;
   }
+
+  .second-card-btn-wrapper {
+    margin-top: 235px;
+    margin-left: 95px;
+  }
+
+  /* second-card Ended -----------> */
+
+  /* sellers section --------> */
+  .sellers {
+    padding: 70px 0px;
+  }
+
+  .sellers-title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 70px;
+  }
+
+  .sellers-list {
+    overflow: hidden;
+  }
+
+  .discount-percent {
+    color: var(--white-opacity);
+    font-family: var(--font-roboto);
+    font-size: 12px;
+    font-weight: var(--font-300);
+    line-height: 14.06px;
+    background-color: #3A5E46;
+    padding: 3px 6px;
+    border-radius: 6px;
+  }
+
+  .sellers-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .clothes-image {
+    padding: 0px 40.63px 54.01px 48.88px;
+  }
+
+  .clothes-title {
+    font-size: 18px;
+    line-height: normal;
+    margin-bottom: 4px;
+  }
+
+  .shopping-image {
+    --size: 40px;
+    border-radius: 6px;
+    padding: 11px 11px;
+    width: var(--size);
+    height: var(--size);
+  }
+
+  .clothes-price {
+    font-size: 16px;
+  }
+
+  .discount-price {
+    display: inline-block;
+    color: var(--color-opacity-20);
+    font-family: var(--font-roboto);
+    font-size: 16px;
+    font-weight: var(--font-500);
+    line-height: normal;
+    text-decoration: line-through;
+    margin-right: 12px;
+  }
+
+  .Products-btn {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-weight:var(--font-400);
+    line-height: 17px;
+    padding: 16px 40px;
+    background-color: var(--bg-brands);
+    border-radius: 6px;
+    color: var(--white-color);
+  }
   
-.second-card-btn-wrapper {
-  margin-top: 235px;
-  margin-left: 95px;
-}
-/* second-card Ended -----------> */
-
-/* sellers section --------> */
-.sellers{
-  padding:70px 0px;
-}
-.sellers-title {
-  font-size: 48px;
-  line-height: 48px;
-  padding:0px 0px 70px;
-}
-.sellers-list {
-  overflow: hidden;
-}
-.sellers-image {
-  width:100%;
-  height: auto;
-}
-.clothes-image {
-  padding: 0px 40.63px 54.01px 48.88px;
-
-}
-.clothes-title {
-  font-size: 18px;
-  line-height: normal;
-}
-.shopping-image {
-  padding: 11px;
-}
-.clothes-price {
-  font-size: 16px;
-  line-height: 18.75px;
-  margin-top: 4px;
-}
-
 
 
 
