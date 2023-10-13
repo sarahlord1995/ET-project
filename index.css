@@ -425,11 +425,14 @@ nav {
   background-color: var(--white-color);
   border-radius: 24px;
 }
+.discount-part{
+  display: inline-flex;
+ align-self: flex-end;
+}
 
 .discount-percent{
   display: none;
 }
-
 
 .heart-icon {
   --size: 24px;
@@ -585,7 +588,6 @@ nav {
 @media (min-width:1000px) {
   .container {
     min-width: 1320px;
-
   }
 
   .collection-title {
@@ -682,6 +684,9 @@ nav {
   .sellers-list {
     overflow: hidden;
   }
+  .discount-part{
+    display: inline-flex;
+  }
 
   .discount-percent {
     color: var(--white-opacity);
@@ -692,10 +697,11 @@ nav {
     background-color: #3A5E46;
     padding: 3px 6px;
     border-radius: 6px;
-    align-items: flex-start;
-    flex-direction: column;
     display: inline-flex;
+    align-self: flex-start;
     margin-right: 175px;
+    margin-top: 16px;
+  
   }
 
   .sellers-image {
@@ -783,15 +789,6 @@ nav {
   .shoes-image{
     display: block;
   }
-
-  .discount-title {
-    font-family: var(--font-roboto);
-    font-size: 64px;
-    font-weight:var(--font-700);
-    line-height: 48px;
-    text-align: left;
-  }
-
   .date-wrapper {
     display: flex;
     flex-direction: row;
@@ -829,15 +826,5 @@ nav {
     font-size: 24px;
     line-height: 28.13px;
   }
-
-  
-
-
-
-
-
-
-
-
 
 }
