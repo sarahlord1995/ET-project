@@ -426,10 +426,16 @@ nav {
   border-radius: 24px;
 }
 
+.discount-percent{
+  display: none;
+}
+
+
 .heart-icon {
   --size: 24px;
   width: var(--size);
   height: var(--size);
+  align-self: flex-end;
 }
 
 .heart-btn {
@@ -638,7 +644,6 @@ nav {
   .second-card-title {
     font-size: 24px;
     line-height: 40px;
-    margin-top: 20.39px;
     margin-right: 98.5px;
     margin-top: 71.87px;
     white-space: nowrap;
@@ -657,7 +662,10 @@ nav {
 
   /* second-card Ended -----------> */
 
+
   /* sellers section --------> */
+
+
   .sellers {
     padding: 70px 0px;
   }
@@ -684,6 +692,10 @@ nav {
     background-color: #3A5E46;
     padding: 3px 6px;
     border-radius: 6px;
+    align-items: flex-start;
+    flex-direction: column;
+    display: inline-flex;
+    margin-right: 175px;
   }
 
   .sellers-image {
@@ -713,7 +725,7 @@ nav {
     font-size: 16px;
   }
 
-  .discount-price {
+  .discount{
     display: inline-block;
     color: var(--color-opacity-20);
     font-family: var(--font-roboto);
@@ -742,7 +754,7 @@ nav {
 
 
 
-  /* sales -----> */
+  /* sales -----------------------> */
 
 
 
