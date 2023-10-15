@@ -46,7 +46,13 @@ header {
   position: fixed;
   top: 0;
   display: none;
-  z-index: 1100 !important;
+  z-index: 1200 !important;
+}
+
+
+header.show{
+  background: var(--green);
+  z-index: 20000;
 }
 
 
