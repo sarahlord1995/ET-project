@@ -333,6 +333,29 @@ nav {
 
 
 
+/*      brand logo     */
+.brands{
+  width: 100%;
+  background: var(--black-color);
+}
+
+.wrapp_brand_mobile{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.wrapp_brand_desktop{
+  display: none;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 0px;
+}
+
+
 
 /*        page-2        */
 
@@ -747,6 +770,15 @@ nav {
 
   nav.nav_mobile{
     visibility: hidden;
+  }
+
+
+  .wrapp_brand_mobile{
+    display: none;
+  }
+
+  .wrapp_brand_desktop{
+    display: flex;
   }
 
 
