@@ -13,6 +13,7 @@
   --color-opacity: rgba(0, 0, 0, 0.60);
   --color-opacity-20: rgba(0, 0, 0, 0.20);
   --yellow-color: #FDDE67;
+  --yellow-hover: #FFEB9D;
   --bg-main: linear-gradient(111deg, #2A4032 0.81%, #3A5E46 100%);
   --bg-brands: #181818;
   --bg-gray-1: #C5C2CA;
@@ -257,6 +258,11 @@ nav {
   line-height: normal;
   text-transform: capitalize;
   margin-top: 12px;
+  transition: all .6s ease;
+}
+
+.btn-collection:hover{
+  background: var(--yellow-hover);
 }
 
 .home-img {
