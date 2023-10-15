@@ -46,13 +46,13 @@ header {
   position: fixed;
   top: 0;
   display: none;
-  z-index: 1200 !important;
+  z-index: 1900 !important;
+  transition: all .6s ease-in;
 }
 
 
 header.show{
   background: var(--green);
-  z-index: 20000;
 }
 
 
@@ -292,7 +292,7 @@ nav {
   position: absolute;
   top: 282px;
   right: 532px;
-  z-index: 2000 !important;
+  z-index: 1800 !important;
   display: none;
 }
 
@@ -313,7 +313,7 @@ nav {
   position: absolute;
   bottom: 70px;
   left: 150px;
-  z-index: 9999 !important; 
+  z-index: 1800 !important; 
 
 }
 
