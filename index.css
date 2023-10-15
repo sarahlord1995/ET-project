@@ -545,6 +545,7 @@ nav {
   background-color: var(--white-color);
   border: none;
   margin: 15px 12px 0px;
+  cursor: pointer;
 }
 
 .sellers-item {
