@@ -39,11 +39,23 @@
   box-sizing: border-box;
 }
 
+
+/*       container     */
+
+
+.container {
+  width: 100%;
+  margin: auto;
+  max-width: 1320px;
+  padding: 0px 15px;
+
+}
+
 /*       header     */
 
 header {
   width: 100%;
-  padding: 25px 110px;
+  padding: 25px 0px;
   position: fixed;
   top: 0;
   display: none;
@@ -67,7 +79,6 @@ nav {
 
 }
 
-
 /*    logo   */
 
 .logo {
@@ -78,9 +89,7 @@ nav {
   font-style: normal;
   font-weight: var(--font-900);
   line-height: 40px;
-  /* 111.111% */
 }
-
 
 
 /*        list-item           */
@@ -105,7 +114,6 @@ nav {
   font-style: normal;
   font-weight: var(--font-400);
   line-height: 40px;
-  /* 222.222% */
   text-transform: capitalize;
 }
 
@@ -120,7 +128,6 @@ nav {
   gap: 10px;
   background-color: var(--yellow-color);
 }
-
 
 
 /*       nav-mobile         */
@@ -142,28 +149,6 @@ nav {
   justify-content: space-between;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*        main  container      */
-
-.container {
-  width: 100%;
-  margin: auto;
-  max-width: 1320px;
-  padding: 0px 15px;
-
-}
 
 /*       page-1         */
 
@@ -228,7 +213,6 @@ nav {
   font-size: 60px;
   font-weight: var(--font-900);
   line-height: 50px;
-  /* 83.333% */
   text-transform: capitalize;
 }
 
@@ -304,9 +288,9 @@ nav {
 
 
 .circle_off{
-  color: #181818;
+  color: var(--bg-brands);
   text-align: center;
-  font-family: Roboto;
+  font-family: var(--font-roboto);
   font-size: 26px;
   font-style: normal;
   font-weight: 700;
@@ -368,13 +352,7 @@ nav {
 }
 
 
-
 /*        page-2        */
-
-
-
-
-
 
 
 .collection-title {
@@ -516,7 +494,12 @@ nav {
   flex-direction: row;
   width: 100%;
   overflow-x: scroll;
-  gap: 35px;
+}
+.sellers-list li{
+  padding: 0px 17.5px;
+}
+.sellers-item:nth-of-type(1){
+  padding-left: 0px;
 }
 
 .sellers-card {
@@ -532,7 +515,6 @@ nav {
   display: none;
 }
 
-
 .heart-icon {
   --size: 24px;
   width: var(--size);
@@ -547,17 +529,14 @@ nav {
   margin: 15px 12px 0px;
   cursor: pointer;
 }
-
 .sellers-item {
   font-family: var(--font-roboto);
 }
-
 .sellers-image {
   width: 133px;
   height: auto;
   object-fit: cover;
 }
-
 .clothes-image {
   padding: 0px 51.25px 42px 43px;
 }
@@ -570,7 +549,6 @@ nav {
   justify-content: space-between;
   margin-top: 16px;
 }
-
 .clothes-title {
   font-size: 16px;
   font-weight: var(--font-500);
@@ -586,16 +564,13 @@ nav {
   padding: 7px 7px;
   width: var(--size);
   height: var(--size);
-
 }
-
 .clothes-price {
   color: var(--color-opacity);
   font-size: 14px;
   font-weight: var(--font-300);
   line-height: normal;
 }
-
 .discount-price {
   color: var(--color-opacity-20);
   font-size: 16px;
@@ -617,7 +592,6 @@ nav {
 .timer {
   background-color: var(--green);
   padding: 32px 0px;
-  border-left: 500px solid var(--yellow-color);
 }
 
 .discount-title{
@@ -641,16 +615,9 @@ nav {
   color: var(--white-color);
   font-family: var(--font-roboto);
   display: flex;
-  flex-direction: column;
-
-}
-
-.date-wrapper {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   gap: 12px;
+  justify-content: center;
 }
 
 .date-item {
@@ -876,14 +843,11 @@ nav {
   .sellers {
     padding: 70px 0px;
   }
-
-
   .sellers-title {
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 70px;
   }
-
   .sellers-list {
     overflow: hidden;
   }
@@ -902,22 +866,18 @@ nav {
     display: inline-flex;
     margin-right: 175px;
   }
-
   .sellers-image {
     width: 100%;
     height: auto;
   }
-
   .clothes-image {
     padding: 0px 40.63px 54.01px 48.88px;
   }
-
   .clothes-title {
     font-size: 18px;
     line-height: normal;
     margin-bottom: 4px;
   }
-
   .shopping-image {
     --size: 40px;
     border-radius: 6px;
@@ -925,11 +885,9 @@ nav {
     width: var(--size);
     height: var(--size);
   }
-
   .clothes-price {
     font-size: 16px;
   }
-
   .discount{
     display: inline-block;
     color: var(--color-opacity-20);
@@ -940,7 +898,6 @@ nav {
     text-decoration: line-through;
     margin-right: 12px;
   }
-
   .Products-btn {
     display: block;
     text-align: center;
@@ -961,14 +918,12 @@ nav {
 
   /* sales -----------------------> */
 
-
-
   .timer {
     background-color: var(--green);
     padding: 78px 0px;
     background: linear-gradient(to right, #FDDE67 0%, #FDDE67 33%, #3B5F47 0%, #3B5F47 100%);
   }
-  .timer-wrapper {
+  .sale-wrapper {
     display: flex;
     flex-direction: row;
     gap: 40px;
@@ -983,7 +938,6 @@ nav {
     text-align: left;
     color: var(--black-color);
     margin-bottom: 32px;
-  
   }
   .shoes-image{
     display: block;
@@ -1014,6 +968,10 @@ nav {
     text-align: left;
     margin-bottom: 93.47px;
   }
+  .date-item{
+    display: flex;
+    flex-direction: column;
+  }
 
   .date-body {
     display: flex;
@@ -1029,20 +987,10 @@ nav {
     font-size: 64px;
     line-height: 48px;
   }
-
   .date-desc {
     font-size: 24px;
     line-height: 28.13px;
   }
-
-  
-
-
-
-
-
-
-
 
 
 }
