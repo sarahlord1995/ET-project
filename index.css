@@ -170,7 +170,7 @@ nav {
   flex-flow: column nowrap;
   align-items: start;
   gap: 12px;
-  padding: px 15px;
+  padding:  15px;
   position: absolute;
   top: 27px;
   z-index: 1200 !important;
@@ -179,16 +179,16 @@ nav {
 
 .year {
   color: rgba(255, 255, 255, 0.30);
-  font-family: Lato;
+  font-family: var(--font-lato);
   font-size: 30px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: var(--font-400);
   line-height: normal;
 }
 
 
 .title-home {
-  color: #FFF;
+  color: var(--white-color);
   font-family: var(--font-lato);
   font-size: 60px;
   font-weight: var(--font-900);
@@ -199,10 +199,10 @@ nav {
 
 .par-title {
   color: rgba(255, 255, 255, 0.80);
-  font-family: Lato;
+  font-family: var(--font-lato);
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--font-400);
   line-height: normal;
 }
 
@@ -213,12 +213,12 @@ nav {
   align-items: flex-start;
   gap: 10px;
   border-radius: 6px;
-  background: #FDDE67;
-  color: #181818;
-  font-family: Lato;
+  background: var(--yellow-color);
+  color: var(--bg-brands);
+  font-family: var(--font-lato);
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: var(--font-400);
   line-height: normal;
   text-transform: capitalize;
   margin-top: 12px;
@@ -240,7 +240,7 @@ nav {
 .big_circle {
   width: 196px;
   height: 196px;
-  border-radius: 50%;
+  border-radius: var(--radius-50);
   background-color: #1B2D22;
   
   
@@ -267,29 +267,30 @@ nav {
 }
 
 .prices{
-  color: #FFF;
+  color: var(--white-color);
   text-align: center;
-  font-family: Lato;
+  font-family: var(--font-lato);
   font-size: 36px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: var(--font-500);
   line-height: normal;
   display: none;
 }
 
 .circle{
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  border-radius: var(--radius-50);
   background: #FDDE67;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   display: none;
-  margin-left: 90px;
+  margin-left: 60px;
   position: absolute;
-  z-index: 1111;
-  top: -120px;
+  z-index: 1111 !important;
+  top: -140px;
   
 }
 
@@ -300,7 +301,7 @@ nav {
   font-family: var(--font-roboto);
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: var(--font-700);
   line-height: normal;
 }
 
@@ -360,7 +361,7 @@ nav {
 
 
 .collection-title {
-  font-family: Lato;
+  font-family: var(--font-lato);
   font-size: 32px;
   font-weight: var(--font-400);
   line-height: 32px;
@@ -411,7 +412,7 @@ nav {
 
 .card-btn {
   padding: 16px 40px;
-  border-radius: 6px;
+  border-radius: var(--radius-6);
   color: var(--white-color);
   background-color: #181818;
   font-family: var(--font-lato);
@@ -515,8 +516,12 @@ nav {
   border-radius: 24px;
 }
 
+.discount-part{
+ align-self: flex-end;
+}
+
 .discount-percent{
-  display: none;
+  visibility: hidden;
 }
 
 .heart-icon {
@@ -564,7 +569,7 @@ nav {
   --size: 30px;
   display: flex;
   background-color: var(--yellow-color);
-  border-radius: 6px;
+  border-radius: var(--radius-6);
   padding: 7px 7px;
   width: var(--size);
   height: var(--size);
@@ -595,7 +600,7 @@ nav {
 
 .timer {
   background-color: var(--green);
-  padding: 32px 0px;
+  padding: /*32px*/ 62px 0px;
 }
 
 .discount-title{
@@ -634,7 +639,7 @@ nav {
   display: flex;
   flex-direction: column;
   padding: 12px 0px;
-  border-radius: 8px;
+  border-radius: var(--radius-8);
   width: 54px;
   height: 56px;
   background-color: var(--black-opacity-2);
@@ -682,19 +687,19 @@ nav {
 
   .year{
     color: rgba(255, 255, 255, 0.30);
-    font-family: Lato;
+    font-family: var(--font-lato);
     font-size: 60px;
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--font-400);
     line-height: normal;
   }
 
   .title-home{
-    color: #FFF;
-    font-family: Lato;
+    color: var(--white-color);
+    font-family: var(--font-lato);
     font-size: 112px;
     font-style: normal;
-    font-weight: 900;
+    font-weight: var(--font-900);
     line-height: 100px; /* 89.286% */
     letter-spacing: 14.56px;
     text-transform: capitalize;
@@ -703,10 +708,10 @@ nav {
 
   .par-title{
     color: rgba(255, 255, 255, 0.80);
-    font-family: Lato;
+    font-family: var(--font-lato);
     font-size: 25px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: var(--font-400);
     line-height: normal;
   }
 
@@ -723,7 +728,7 @@ nav {
   .big_circle{
     width: 308px;
     height: 308px;
-    border-radius: 50%;
+    border-radius: var(--radius-50);
 
   }
 
@@ -878,8 +883,10 @@ nav {
     padding: 3px 6px;
     border-radius: 6px;
     align-items: flex-start;
-    display: inline-flex;
+    flex-direction: column;
+    visibility: visible;
     margin-right: 175px;
+
   }
   .sellers-image {
     width: 100%;
