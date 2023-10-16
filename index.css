@@ -663,6 +663,10 @@ nav {
 
 
 @media (min-width:1000px) {
+  .container {
+    min-width: 1320px;
+    padding: 0px;
+  }
 
   header{
     display: block;
