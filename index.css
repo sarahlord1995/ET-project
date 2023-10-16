@@ -159,31 +159,11 @@ nav {
   overflow: hidden;
 }
 
-.home-page::before {
-  content: '';
-  width: 196px;
-  height: 196px;
-  position: absolute;
-  bottom: 89px;
-  right: 150px;
-  border-radius: 50%;
-  background-color: #1B2D22;
-  z-index: 0 !important;
-
+.d-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
-
-.home-page::after {
-  content: '';
-  width: 196px;
-  height: 196px;
-  position: absolute;
-  bottom: 165px;
-  right: 27px;
-  border-radius: 50%;
-  background-color: #1B2D22;
-  z-index: 0 !important;
-}
-
 
 .box-titles {
   display: flex;
@@ -193,7 +173,7 @@ nav {
   padding: px 15px;
   position: absolute;
   top: 27px;
-  z-index: 999 !important;
+  z-index: 1200 !important;
 }
 
 
@@ -249,12 +229,41 @@ nav {
   background: var(--yellow-hover);
 }
 
+.box_home_pro{
+  width: 60%;
+  max-width: 350px;
+  min-width: 350px;
+  position: relative;
+  margin-top: 365px;
+}
+
+.big_circle {
+  width: 196px;
+  height: 196px;
+  border-radius: 50%;
+  background-color: #1B2D22;
+  
+  
+}
+
+.big_circle.left{
+  top: -70px;
+  right: 35px;
+  position: absolute;
+  
+}
+
+.big_circle.right{
+  margin-bottom: 60px;
+  margin-left: 10px;
+}
+
 .home-img {
   width: 228px;
   position: absolute;
   bottom: 0;
-  right: 74px;
-  z-index: 99 !important;
+  left: 60px;
+  z-index: 999;
 }
 
 .prices{
@@ -265,9 +274,6 @@ nav {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  position: absolute;
-  top: 227px;
-  right: 640px;
   display: none;
 }
 
@@ -279,11 +285,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 282px;
-  right: 532px;
-  z-index: 1800 !important;
   display: none;
+  margin-left: 90px;
+  position: absolute;
+  z-index: 1111;
+  top: -100px;
+  
 }
 
 
@@ -301,16 +308,13 @@ nav {
   display: flex;
   justify-content: center;
   position: absolute;
+  right: 130px;
   bottom: 70px;
-  left: 150px;
-  z-index: 1800 !important; 
+  z-index: 1000;
 
 }
 
 .arrows{
-  position: absolute;
-  bottom: 20px;
-  right: 629px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -659,6 +663,12 @@ nav {
     display: block;
   }
 
+  .d-flex{
+    flex-direction: row;
+  }
+
+  
+
   .box-titles{
     width: 538px;
     margin-top: 150px;
@@ -686,30 +696,6 @@ nav {
     text-transform: capitalize;
   }
 
-  .home-page::before {
-    content: '';
-    width: 308px;
-    height: 308px;
-    position: absolute;
-    bottom: 184px;
-    right: 244px;
-    border-radius: 50%;
-    background-color: #1B2D22;
-    z-index: 0 !important;
-  
-  }
-  
-  .home-page::after {
-    content: '';
-    width: 308px;
-    height: 308px;
-    position: absolute;
-    bottom: 77px;
-    right: 415px;
-    border-radius: 50%;
-    background-color: #1B2D22;
-    z-index: 0 !important;
-  }
 
   .par-title{
     color: rgba(255, 255, 255, 0.80);
@@ -724,19 +710,43 @@ nav {
     margin-top: 25px;
   }
 
+  .box_home_pro{
+    max-width: 720px;
+    margin-left: 590px;
+    margin-top: 415px;
+  }
+
+  .big_circle{
+    width: 308px;
+    height: 308px;
+    border-radius: 50%;
+
+  }
+
+  .big_circle.left{
+    top: -120px;
+    left: 180px;
+  }
+
+
+
   .home-img{
     width: 342px;
     margin-right: 220px;
   }
 
   .dots{
-    right: -1050px;
-    bottom: 370px;
+    bottom: 330px;
+    right: 0;
     transform: rotate(90deg);
   }
 
   .prices{
     display: block;
+    position: absolute;
+    top: -130px;
+    left: -10px;
+    z-index: 1000;
   }
 
   .circle{
@@ -745,6 +755,8 @@ nav {
 
   .arrows{
     visibility: visible;
+    position: absolute;
+    bottom: 20px;
   }
 
 
