@@ -658,6 +658,10 @@ nav {
 
 
 @media (min-width:1000px) {
+  .container {
+    min-width: 1320px;
+    padding: 0px;
+  }
 
   header{
     display: block;
@@ -874,7 +878,6 @@ nav {
     padding: 3px 6px;
     border-radius: 6px;
     align-items: flex-start;
-    flex-direction: column;
     display: inline-flex;
     margin-right: 175px;
   }
